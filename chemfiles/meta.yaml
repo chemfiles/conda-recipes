@@ -1,0 +1,13 @@
+package:
+  version: 0.4.0.dev.0802bb
+  name: chemfiles
+
+about:
+  home: https://github.com/chemfiles/chemfiles
+  license: MPL-v2.0
+  summary: Efficient library for chemistry files IO
+
+requirements:
+  run:
+    - chemfiles-lib
+    - chemfiles-python

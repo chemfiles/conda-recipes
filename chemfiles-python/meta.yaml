@@ -18,12 +18,12 @@ requirements:
     - python
     - enum34  # [py < 34]
     - numpy
-    - chemfiles-lib
+    - chemfiles-lib ==0.4.0.dev.0802bb
   run:
     - python
     - enum34  # [py < 34]
     - numpy
-    - chemfiles-lib
+    - chemfiles-lib ==0.4.0.dev.0802bb
 
 about:
   home: https://github.com/chemfiles/chemfiles.py

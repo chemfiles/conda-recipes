@@ -9,5 +9,5 @@ about:
 
 requirements:
   run:
-    - chemfiles-lib
-    - chemfiles-python
+    - chemfiles-lib ==0.4.0.dev.0802bb
+    - chemfiles-python ==0.4.0.dev.764095

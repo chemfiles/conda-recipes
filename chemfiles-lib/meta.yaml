@@ -1,0 +1,27 @@
+package:
+  version: 0.4.0.dev.0802bb
+  name: chemfiles-lib
+
+about:
+  home: https://github.com/chemfiles/chemfiles
+  license: MPL-v2.0
+  summary: Efficient library for chemistry files IO
+
+build:
+  script:
+    - export MACOSX_DEPLOYMENT_TARGET=""  # [osx]
+    - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX .
+    - cmake --build . --config release --target install
+    - cmake -DBUILD_SHARED_LIBS=ON .
+    - cmake --build . --config release --target install
+source:
+  fn: chemfiles-0.4.0-dev.tar.gz
+  url: https://github.com/chemfiles/chemfiles/archive/7f2111bc56ec26c20fa93e1e0ca8abc1433c29e8.zip
+  md5: 0802bbc57a280909e0e8e83f56c06c8b
+
+requirements:
+  build:
+    - cmake
+    - libnetcdf
+  run:
+    - libnetcdf

@@ -10,7 +10,7 @@ about:
 build:
   script:
     - export MACOSX_DEPLOYMENT_TARGET=""  # [osx]
-    - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX .
+    - cmake -DCMAKE_INSTALL_PREFIX=$PREFIX -DENABLE_NETCDF=ON .
     - cmake --build . --config release --target install
     - cmake -DBUILD_SHARED_LIBS=ON .
     - cmake --build . --config release --target install

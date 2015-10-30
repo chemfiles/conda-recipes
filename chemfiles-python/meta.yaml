@@ -1,6 +1,6 @@
 package:
   name: chemfiles-python
-  version: 0.4.0.dev.764095
+  version: 0.4.0
 
 build:
   script:  # [not win]
@@ -11,19 +11,19 @@ build:
       - if errorlevel 1 exit 1  # [win]
 source:
   git_url: https://github.com/chemfiles/chemfiles.py
-  git_rev: 76409581a0fb43da06b68b2d2a05ee010387fab4
+  git_rev: 0.4.0
 
 requirements:
   build:
     - python
     - enum34  # [py < 34]
     - numpy
-    - chemfiles-lib ==0.4.0.dev.0802bb
+    - chemfiles-lib ==0.4.0
   run:
     - python
     - enum34  # [py < 34]
     - numpy
-    - chemfiles-lib ==0.4.0.dev.0802bb
+    - chemfiles-lib ==0.4.0
 
 about:
   home: https://github.com/chemfiles/chemfiles.py

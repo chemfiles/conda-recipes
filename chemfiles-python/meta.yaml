@@ -23,6 +23,7 @@ test:
 
 requirements:
   build:
+    - cmake
     - python
     - enum34  # [py < 34]
     - numpy

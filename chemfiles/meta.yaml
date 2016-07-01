@@ -1,5 +1,5 @@
 package:
-  version: 0.5.0
+  version: 0.6.0
   name: chemfiles
 
 about:
@@ -9,5 +9,5 @@ about:
 
 requirements:
   run:
-    - chemfiles-lib ==0.5.0
-    - chemfiles-python ==0.5.0
+    - chemfiles-lib ==0.6.0
+    - chemfiles-python ==0.6.0

@@ -1,5 +1,5 @@
 package:
-  version: 0.5.0
+  version: 0.6.0
   name: chemfiles-lib
 
 about:
@@ -15,9 +15,9 @@ build:
     - cmake -DBUILD_SHARED_LIBS=ON .
     - cmake --build . --config release --target install
 source:
-  fn: chemfiles-0.5.0.tar.gz
-  url: https://github.com/chemfiles/chemfiles/archive/0.5.0.tar.gz
-  md5: 8f024af7bb6b46ca4153cc185724ceb0
+  fn: chemfiles-0.6.0.tar.gz
+  url: https://github.com/chemfiles/chemfiles/archive/0.6.0.tar.gz
+  md5: e57e5524c6468bd6cddb0ea0788cf984
 
 requirements:
   build:

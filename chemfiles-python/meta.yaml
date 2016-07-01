@@ -1,29 +1,37 @@
 package:
   name: chemfiles-python
-  version: 0.5.0
+  version: 0.6.0
 
 build:
   script:  # [not win]
       - export MACOSX_DEPLOYMENT_TARGET=""  # [osx]
-      - python setup.py install  # [not win]
+      - python setup.py install # [not win]
   script:  # [win]
-      - "%PYTHON%" setup.py install  # [win]
+      - "%PYTHON%" setup.py install # [win]
       - if errorlevel 1 exit 1  # [win]
 source:
-  git_url: https://github.com/chemfiles/chemfiles.py
-  git_rev: 0.5.0
+  fn: chemfiles.py-0.6.0.tar.gz
+  url: https://github.com/chemfiles/chemfiles.py/archive/0.6.0.tar.gz
+  md5: 61e126b36b684b75290d0f183cb9b12e
+  patches:
+      - find_library.patch
+
+test:
+  commands:
+    - cd $SRC_DIR/tests
+    - python -m unittest discover
 
 requirements:
   build:
     - python
     - enum34  # [py < 34]
     - numpy
-    - chemfiles-lib ==0.5.0
+    - chemfiles-lib ==0.6.0
   run:
     - python
     - enum34  # [py < 34]
     - numpy
-    - chemfiles-lib ==0.5.0
+    - chemfiles-lib ==0.6.0
 
 about:
   home: https://github.com/chemfiles/chemfiles.py
